@@ -1,0 +1,57 @@
+#homepage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chooseAlgo{
+    width: 60%;
+    margin: 1%;
+}
+
+@media only screen and (min-width: 768px) {
+    #chooseAlgo{
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #chooseAlgo{
+        width: 30%;
+    }
+}
+
+h1{
+    margin:0;
+}
+.title{
+    text-align: center;
+}
+.algo_selector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter__menu {
+margin: 0.125rem auto;
+}
+
+.filter__option {
+background-color: white;
+}
+
+.filter--is-focused {
+background-color: lightblue;
+}
+
+.filter__group {
+padding: 0;
+}
+
+.filter__menu-portal {
+border: 1px solid darkblue;
+}
+
+.filter__placeholder {
+    color:teal !important;
+}
