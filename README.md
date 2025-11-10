@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# GraphAlgo – BFS & DFS Visualization
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based interactive visualizer that demonstrates how **Breadth-First Search (BFS)** and **Depth-First Search (DFS)** explore a grid differently to reach a destination node.
 
-## Available Scripts
+**Live Demo:** https://main--dapper-pastelito-160c9d.netlify.app/  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+GraphAlgo is a web application built with **React** that visually explains how BFS and DFS traverse a grid. Users can define a **start point**, an **end point**, and **blockers**, then trigger a real-time animation showing how each algorithm navigates the grid to find the destination.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This tool is designed to help students, developers, and interview candidates understand algorithmic behavior through interactive visualization rather than static examples.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **React-powered interactive grid** with efficient state management  
+- **Click-to-select** start node, end node, and blockers  
+- **Choose between BFS and DFS**  
+- **Animated traversal** showing visited nodes and the final path  
+- **Reset functionality** to try new configurations  
+- **Responsive UI** for desktop and mobile  
+- **Extensible codebase** suitable for adding more algorithms
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How It Works
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Click on any cell to set the **Start** node.  
+2. Click another cell to set the **End** node.  
+3. Add **Blockers** by clicking additional cells.  
+4. Select **BFS** or **DFS**.  
+5. Press **Visualize** to watch the algorithm search the grid.
 
-### `npm run eject`
+The visualizer displays:  
+- All visited nodes  
+- Exploration order  
+- The final computed path (if it exists)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **React** (Functional Components + Hooks)  
+- **JavaScript / ES6**  
+- **CSS**  
+- **Netlify** for deployment  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## Future Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Add advanced algorithms: Dijkstra, A*, Greedy Best-First
+2. Add playback speed control
