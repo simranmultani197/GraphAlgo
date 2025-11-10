@@ -4,6 +4,8 @@ A React-based interactive visualizer that demonstrates how **Breadth-First Searc
 
 **Live Demo:** https://main--dapper-pastelito-160c9d.netlify.app/  
 
+<img width="1708" height="848" alt="Screenshot 2025-11-10 at 9 13 31 AM" src="https://github.com/user-attachments/assets/674922dc-454b-4d4c-8ec0-f3b3663029fe" />
+
 ---
 
 ## Overview
