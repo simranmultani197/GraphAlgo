@@ -1,6 +1,6 @@
 // A simple function that SHOULD add two numbers
 function add(a, b) {
-    return a + b; 
+    return a + b + 1; 
 }
 
 // The "Test"
