@@ -1,0 +1,11 @@
+name: Test Bot Connection
+on: workflow_dispatch  # This lets you run it manually with a button!
+
+jobs:
+  test-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Intentional Crash
+        run: |
+          echo "Testing CI-Sherlock..."
+          exit 1
