@@ -1,11 +1,12 @@
-name: Test Bot Connection
-on: workflow_dispatch  # This lets you run it manually with a button!
+name: Logic Test
+on: pull_request
 
 jobs:
-  test-fail:
+  check-math:
     runs-on: ubuntu-latest
     steps:
-      - name: Intentional Crash
-        run: |
-          echo "Testing CI-Sherlock..."
-          exit 1
+      - name: Checkout Code
+        uses: actions/checkout@v3  # Needed to fetch the script
+      
+      - name: Run the "Test"
+        run: node test/ci_test.js
